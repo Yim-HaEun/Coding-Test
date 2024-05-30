@@ -13,7 +13,8 @@ class Solution {
                 case 'd': n+=10;
                     break;
                 case 'a': n-=10;
-                    break;       
+                    break;
+                default : break;
             }
         }
         return n;
