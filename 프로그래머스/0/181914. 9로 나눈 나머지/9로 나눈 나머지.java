@@ -1,13 +1,10 @@
 class Solution {
     public int solution(String number) {
-        String[] n = number.split("");
-        int num =0;
-        for(int i=0;i<n.length;i++){
-            String a = n[i];
-            num+=Integer.parseInt(a);
+        int answer=0;
+        for(int i=0;i<number.length();i++){
+            answer += number.charAt(i)-'0';
         }
-        
-        int answer = num%9;
+        answer %= 9 ;
         return answer;
     }
 }
