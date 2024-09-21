@@ -6,13 +6,12 @@ public class Main {
 		String str;
 		while(true) {
 			str = br.readLine();
-			
-		
-		if(str == null || str.trim().isEmpty()) {
-			break;
+			if(str == null || str.trim().isEmpty()) {
+				break;
 			}
-		bw.write(str+"\n");
+		 bw.write(str+"\n");
 		}
+		
 		bw.flush();
 		br.close();
 		bw.close();
