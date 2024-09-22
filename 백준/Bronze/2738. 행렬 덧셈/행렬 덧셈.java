@@ -17,14 +17,16 @@ public class Main {
 			for(int j=0;j<m;j++) {
 				b[i][j] = scan.nextInt();
 			}
-		}for(int i=0;i<n;i++) {
+		}
+		StringBuilder sb = new StringBuilder();
+		for(int i=0;i<n;i++) {
 			for(int j=0;j<m;j++) {
 				c[i][j] = a[i][j]+b[i][j];
-				System.out.printf(c[i][j] + " ");
+				sb.append(c[i][j]).append(" ");
 			}
-			System.out.println("");
+			sb.append("\n");
 		}
-		
+		System.out.println(sb.toString());
 		scan.close();
 		}
 }
